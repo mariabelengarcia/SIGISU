@@ -46,7 +46,6 @@
     <link rel="stylesheet" href="../css/style.css" />
 
     <script src="../js/jscript.js"></script>
-    
   </head>
   <body class="gestor">
     <header>
@@ -262,7 +261,14 @@
     <main role="main" class="main-color">
       <div class="container">       
         <div class="row paneles">
-          <h4 class="num titulo-celeste">Nuevo usuario</h4>
+          <div class="header-usuario">
+            <h4 class="num titulo-celeste">María Florencia Gonzalez - 00-00000000-0</h4>
+            <div class="info-usuario">
+              <button class="btn"><img src="../img/icon/check-verde-md.svg" alt=""  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Estado de cuenta: Aprobada"></button>
+              <button class="btn"><img src="../img/icon/calendar.svg" alt=""  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Fecha de creación: 10/01/2021 - 05:04"></button>
+              <button class="btn"><img src="../img/icon/time.svg" alt=""  data-bs-toggle="tooltip" data-bs-placement="bottom" title="Último inicio de sesión: 18/01/2021 - 15:19"></button>
+            </div>
+          </div>
           <div class="col-lg-7 col-md-12 col-sm-12">
             <div class="panel row">
               <h5>Datos personales</h5>
@@ -326,6 +332,29 @@
                 <input class="form-control input-sigisu" type="text" placeholder="Ingresá la descripción del cargo" aria-label="default input example" required="true">                
               </div>
             </div>
+             <div class="panel row">
+              <div class="header-panel-action ">
+                <h5>Archivos</h5>
+                <button class="btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Agregar archivo" >
+                  <img src="../img/icon/plus-celeste.svg">
+                </button>
+              </div>
+              <hr>
+              <div>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Carpetas</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Listado</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active contenido-tabs" id="home" role="tabpanel" aria-labelledby="home-tab">Aún no existen archivos</div>
+                  <div class="tab-pane fade contenido-tabs" id="profile" role="tabpanel" aria-labelledby="profile-tab">Aún no existen archivos</div>
+                </div>
+              </div>
+             </div>
           </div>
           <div class="col-lg-5 col-md-12 col-sm-12">
             <div class="panel row">
@@ -336,7 +365,7 @@
                 <button type="button" class="btn agregar" data-bs-toggle="modal" data-bs-target="#exampleModal">
                    <img src="../img/icon/plus-celeste.svg"> Agregar Documento de Identidad 
                 </button>
-                <hr>              
+                         
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
@@ -357,6 +386,11 @@
                     </div>
                   </div>
                 </div>
+                <div class="archivo-cargado">
+                  DNI-00000000.pdf
+                 <button class="btn"> <img src="../img/icon/trash-sm.svg"></button> 
+                </div>
+                <hr>     
               </div>
               <div class="agregar-doc">
                 <!-- Button trigger modal -->
@@ -458,13 +492,34 @@
                         <option value="4">40</option>
                 </select>  
               <button type="button" class="btn secondary-small">Agregar </button>
+              
+              <table class="table table-borderless tabla-sistema">
+                <thead>
+                  <tr>
+                    <th scope="col">Sistema</th>
+                    <th scope="col">Rol</th>
+                    <th scope="col"></th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    
+                    <td>Obras</td>
+                    <td>Usuario de carga</td>
+                    <td><button class="btn" style="padding: 0;"> <img src="../img/icon/trash-sm.svg"></button> </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
             </div>
           </div>
         
         </div>
       </div>  
       <div class="container  btn-crear">
-        <button type="button" class="btn primary-large col-lg-3 col-md-4 col-sm-12">Crear usuario</button>     
+        <button type="button" class="btn secondary-large col-lg-3 col-md-4 col-sm-12">Desactivar usuario</button>  
+        <button type="button" class="btn primary-large col-lg-3 col-md-4 col-sm-12">Guardar cambios</button>            
       </div>
 
     <footer class="main-footer">
