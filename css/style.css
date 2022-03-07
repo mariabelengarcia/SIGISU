@@ -193,6 +193,215 @@ header .menu:active {
   font-size: 4rem;
 }
 
+/*administracion*/
+.texto-admin img {
+  margin-bottom: 2rem;
+}
+
+.texto-admin h2 {
+  font-weight: 600;
+}
+
+.adm-opciones {
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 15%);
+  padding: 1.5rem 1rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #9284be;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.adm-opciones:hover {
+  background-color: #f3f0ff;
+  color: #9284be;
+}
+
+/*usuarios*/
+
+.filtros-desktop {
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 1rem 0.75rem 2rem 0.75rem;
+  margin: 3rem 0;
+  height: 100%;
+}
+
+.titulo-filtros {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.filtros-desktop .accordion-body {
+  padding: 1rem 0;
+}
+
+.input-sigisu {
+  margin: 1rem 0;
+  border-radius: 3rem;
+  border: 2px solid #cccccc;
+}
+
+.tabla-sigisu {
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.accordion-button {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #37bbed;
+  font-weight: 700;
+}
+
+.desplegable-desktop {
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.desplegable-desktop img:hover {
+  transform: scale(1.25);
+}
+
+.desplegable-desktop hr {
+  height: 90%;
+  width: 1px;
+  padding: 0rem;
+}
+.tabla-desktop {
+  margin-top: 3rem;
+  padding: 0;
+}
+.acciones-header-tabla-desktop {
+  text-align: right;
+}
+
+.header-tabla-desktop h5 {
+  font-weight: 700;
+  color: #333;
+}
+
+.num {
+  color: #37bbed !important;
+}
+
+.table {
+  font-size: 0.85rem;
+  color: #333;
+}
+.tabla-user-actions span {
+  color: #37bbed;
+}
+
+.tabla-user-actions button {
+  display: inline-flex;
+  align-items: center;
+}
+.table-pag {
+  text-align: center;
+}
+
+.table-pag a {
+  border: none;
+  color: #37bbed;
+  font-weight: 600;
+}
+
+.table-pag a:hover {
+  color: #37bbed;
+  font-weight: 600;
+}
+.footer-table {
+  flex-wrap: nowrap;
+  font-size: 0.85rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-table select {
+  font-size: 0.85rem;
+}
+
+.mostrando {
+  text-align: right;
+}
+
+.primary-small {
+  color: #fff;
+  background-color: #9284be;
+  border: solid #9284be;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.02rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.primary-small:hover {
+  color: #9284be;
+  background-color: #fff;
+  border: solid #9284be;
+}
+
+.primary-small:focus,
+.primary-small:active {
+  background-color: #b09fe6;
+  color: #fff;
+  border: solid #b09fe6;
+}
+
+.secondary-small {
+  color: #9284be;
+  background-color: #ffffff;
+  border: solid #9284be;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.02rem;
+}
+
+.secondary-small:hover {
+  background-color: #f3f0ff;
+  color: #9284be;
+}
+
+.secondary-small:focus,
+.secondary-small:active {
+  background-color: #ddd7ef;
+}
+
+.tertiary-small {
+  color: #9284be;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.02rem;
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 15%);
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.tertiary-small:hover {
+  background-color: #f3f0ff;
+  color: #9284be;
+}
+
+.tertiary-small:focus,
+.tertiary-small:active {
+  background-color: #ddd7ef;
+}
 /*login usuario SGO*/
 
 .select-login {
@@ -309,10 +518,14 @@ header .menu:active {
 
 /*main*/
 
-.gestor {
+.home {
   background-image: url("../img/bg-home.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-attachment: fixed;
+}
+
+.main-color {
+  background-color: #fbfbfb;
 }
 
 .home-gestor {
@@ -485,13 +698,10 @@ header .menu:active {
   background-color: #f3faff;
 }
 
-.main-footer section {
-  padding: 1rem 1rem 1rem 0;
-}
-
 .footer-chico {
   display: flex;
   justify-content: space-between;
+  padding: 1rem 0;
 }
 
 .main-footer .nav {
@@ -633,16 +843,27 @@ header .menu:active {
 }
 
 /*responsive*/
-@media screen and (max-width: 990px) {
-  .navbar-brand h1 {
-    display: none;
-  }
-  .bienvenido-login h2 {
-    margin-bottom: 3rem;
-  }
-}
 
 @media screen and (max-width: 860px) {
+  .imagen {
+    background-image: none;
+  }
+  .texto-SIGISU {
+    display: none;
+  }
+  .texto-home h2 {
+    margin-bottom: 3rem;
+  }
+
+  .footer-chico {
+    flex-direction: column;
+  }
+  .version {
+    justify-content: center;
+  }
+  .lets-make-it {
+    justify-content: center;
+  }
   .menu-gestor {
     display: none !important;
   }
@@ -651,6 +872,9 @@ header .menu:active {
   }
   .home-gestores {
     margin-top: 2rem;
+  }
+  .texto-admin {
+    margin-bottom: 2rem;
   }
 }
 
@@ -672,24 +896,16 @@ header .menu:active {
   .container {
     max-width: 85%;
   }
-}
-
-@media screen and (max-width: 415px) {
-  .opciones {
+  header h1 {
     display: none;
   }
-}
-
-@media screen and (max-width: 378px) {
-  .menu-sgo span {
-    display: none;
+  .acciones-header-tabla-desktop {
+    text-align: left;
+    margin-top: 1rem;
   }
 }
 
 @media screen and (max-width: 344px) {
-  .opciones {
-    display: inline-block;
-  }
   .bienvenido h1 {
     font-size: 2.5rem;
   }
