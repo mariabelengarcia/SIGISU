@@ -242,7 +242,7 @@ header .menu:active {
 }
 
 .input-sigisu {
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
   border-radius: 3rem;
   border: 2px solid #cccccc;
 }
@@ -402,6 +402,63 @@ header .menu:active {
 .tertiary-small:active {
   background-color: #ddd7ef;
 }
+
+/*crear usuario*/
+.paneles {
+  justify-content: space-between;
+}
+
+.panel {
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 1rem 0.75rem;
+  margin: 0 1rem 1rem 0;
+}
+
+.panel h5 {
+  color: #333;
+}
+
+.titulo-celeste {
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.agregar {
+  color: #333;
+  padding: 0;
+}
+
+.agregar-doc hr {
+  color: #37bbed;
+  opacity: 1;
+}
+
+.agregar:hover {
+  color: #37bbed;
+}
+
+.header-panel-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-panel-action button {
+  padding: 0;
+}
+
+.header-panel-action button:hover {
+  transform: scale(1.25);
+}
+
+.btn-crear {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
 /*login usuario SGO*/
 
 .select-login {
