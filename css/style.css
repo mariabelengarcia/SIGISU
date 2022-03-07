@@ -459,6 +459,39 @@ header .menu:active {
   margin-bottom: 4rem;
 }
 
+.header-usuario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-usuario button {
+  padding: 0 0 0 0.5rem;
+}
+
+.archivo-cargado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.tabla-sistema thead {
+  color: #37bbed;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabla-sistema tbody {
+  border-bottom: 1px solid #37bbed;
+}
+
+.contenido-tabs {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: #333;
+  font-style: italic;
+}
+
 /*login usuario SGO*/
 
 .select-login {
@@ -537,7 +570,6 @@ header .menu:active {
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: 0.02rem;
-  margin: 1rem 0 0.5rem 0;
 }
 
 .primary-large:hover {
@@ -959,6 +991,9 @@ header .menu:active {
   .acciones-header-tabla-desktop {
     text-align: left;
     margin-top: 1rem;
+  }
+  .btn-crear button {
+    margin-bottom: 1rem;
   }
 }
 
