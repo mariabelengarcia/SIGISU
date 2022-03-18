@@ -247,7 +247,7 @@ header .menu:active {
   border: 2px solid #cccccc;
 }
 
-.tabla-sigisu {
+.input-sigisu:active .tabla-sigisu {
   box-shadow: 0px 3px 6px rgb(0 0 0 / 15%);
   border-radius: 4px;
   background-color: #fff;
@@ -317,6 +317,10 @@ header .menu:active {
   font-weight: 600;
 }
 
+.tabla-sigisu {
+  margin-top: 1.5rem;
+}
+
 .table-pag a:hover {
   color: #37bbed;
   font-weight: 600;
@@ -330,6 +334,11 @@ header .menu:active {
 
 .footer-table select {
   font-size: 0.85rem;
+}
+
+th:last-child,
+td:last-child {
+  text-align: right;
 }
 
 .mostrando {
@@ -492,6 +501,47 @@ header .menu:active {
   font-style: italic;
 }
 
+/*Mensajeria*/
+.pill-sigisu {
+  border: 2px solid #37bbed;
+  font-size: 0.85rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  color: #333;
+  padding: 0.25rem 0.75rem;
+  width: auto;
+}
+
+.acciones-msj {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.acciones-msj .agregar-doc {
+  margin-right: 2rem;
+}
+
+.busqueda-avanzada {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.modal .filtro-tabla-desktop {
+  justify-content: space-around;
+}
+
+.modal .filtros-desktop {
+  margin-top: 1rem;
+}
+
+.modal .tabla-desktop {
+  margin-top: 1rem;
+}
+
+/*Localidad*/
+.filtros-buscador .filtros-desktop {
+  height: auto;
+}
 /*login usuario SGO*/
 
 .select-login {
@@ -653,113 +703,41 @@ header .menu:active {
   color: #333;
 }
 
-/*Notificaciones home*/
+/*Notificaciones */
 
-.listado-notificaciones {
-  margin: 3rem 0;
-}
-
-.tabla-notificacion {
-  padding: 0 1rem;
-  height: 22rem;
-}
-
-.home-gestores h5 {
-  margin: 2rem 0;
-}
-.cerrar-notificacion {
-  border-left: 0.1rem solid #37bbed;
-  border-radius: 0;
-}
-
-.notificaciones {
-  border-bottom: 0.01rem solid #c0c0c0;
-}
-
-.notificaciones td {
+.notificacion {
+  color: #333;
   padding: 1rem;
 }
+.sub-menu .dropdown-menu {
+  padding: 1rem;
+  min-width: 20rem;
+}
 
-.header-notificacion {
+.sub-menu hr {
+  color: #37bbed;
+  opacity: 100%;
+  margin: 0;
+}
+
+.item-notificacion {
+  flex-wrap: nowrap;
+}
+
+.btn-terciario {
+  color: #37bbed;
   font-weight: 700;
+  text-align: center;
+  margin: 1rem auto 0;
+  display: flex;
+  align-items: center;
 }
 
-.cuerpo-notificacion p {
-  margin-bottom: 0.5rem !important;
-}
-
-.cuerpo-notificacion a {
-  text-decoration: none;
-  font-weight: 600;
+.btn-terciario:hover {
   color: #37bbed;
+  background-color: #e6e6e6;
 }
 
-.cuerpo-notificacion a:hover {
-  color: #ed3d8f;
-}
-
-/* menu gestor desplegado*/
-
-.fondo-translucido {
-  background-color: rgba(51, 51, 51, 0.165);
-}
-
-.menu-gestor-desplegado {
-  background-color: #fff;
-  border-radius: 0 1rem 1rem 0;
-  box-shadow: 0rem 0.188rem 0.375rem #00000029;
-  z-index: 1;
-  position: fixed;
-}
-
-.menu-gestor-desplegado .nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  background-color: #37bbed;
-  border-radius: 0 !important;
-  text-align: left !important;
-}
-.menu-gestor-desplegado span {
-  color: #333;
-  font-weight: 600;
-  margin-left: 0.5rem;
-}
-.menu-gestor-desplegado .nav-link {
-  border-radius: 0 !important;
-}
-
-.menu-gestor-desplegado i {
-  color: #333;
-  font-size: 1.25rem;
-}
-
-.menu-gestor-desplegado li:hover {
-  background-color: #37bbed;
-  color: #fff;
-}
-
-.menu-gestor-desplegado .active i {
-  color: #fff;
-}
-
-.menu-gestor-desplegado .p-3,
-.menu-gestor-desplegado .py-3 {
-  padding: 0.6rem !important;
-  text-align: left !important;
-}
-
-.contraer span,
-.contraer i {
-  color: #37bbed;
-}
-
-.contraer span:hover,
-.contraer i:hover {
-  color: #ed3d8f;
-}
-
-.contraer {
-  text-align: right;
-}
 /*Menu responsive*/
 .menu-responsive {
   display: none;
@@ -858,79 +836,6 @@ header .menu:active {
   font-size: 1.3rem;
 }
 
-/*Administracion SGO*/
-
-.acceso-usuarios {
-  flex-direction: row;
-  background-color: #37bbed;
-  color: #fff;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  border-radius: 0.625rem 0.625rem 0rem 0rem;
-  text-align: right;
-}
-.cantidad h1 {
-  font-size: 5rem;
-}
-.cantidad p {
-  font-weight: 400;
-  font-size: 1.25rem;
-}
-.acceso-mensajes {
-  flex-direction: row;
-  background-color: #9284be;
-  color: #fff;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  border-radius: 0.625rem 0.625rem 0rem 0rem;
-  text-align: right;
-}
-
-/*Formulario administracion de usuarios*/
-.documentos {
-  margin-top: 3rem;
-}
-.carga-doc {
-  text-decoration: none;
-  list-style: none;
-  padding: 0;
-}
-
-.doc {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  align-items: center;
-  border-bottom: 0.15rem solid #37bbed;
-  padding: 0.5rem 0;
-}
-
-.doc p {
-  margin: 0 !important;
-}
-
-.doc:hover {
-  background-color: #d5d9dd;
-}
-
-.crear-usuario {
-  margin-top: 3rem;
-  color: #fff;
-  border: solid #ed3d8f;
-  border-radius: 2rem;
-  font-weight: 700;
-  font-size: 1.2rem;
-  letter-spacing: 0.02rem;
-  background-color: #ed3d8f;
-}
-
-.crear-usuario:hover {
-  background-color: #fff;
-  color: #ed3d8f;
-}
-
 /*responsive*/
 
 @media screen and (max-width: 860px) {
@@ -994,6 +899,13 @@ header .menu:active {
   }
   .btn-crear button {
     margin-bottom: 1rem;
+  }
+  .footer-table {
+    flex-wrap: wrap;
+  }
+
+  .desplegable-desktop {
+    display: none;
   }
 }
 
