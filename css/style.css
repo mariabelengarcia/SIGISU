@@ -1,6 +1,8 @@
 body {
   font-family: "Encode Sans", sans-serif;
+  min-height: 100vh;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -152,13 +154,16 @@ header .menu:active {
 
 .imagen {
   background-image: url("../img/bg-login.png");
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: right;
+  height: 108vh;
 }
 
-.login-img {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.flotante {
+  float: left;
+  height: 40%;
+  width: 100%;
+  margin-bottom: -50px;
 }
 
 .login-img .row {
@@ -458,7 +463,7 @@ td:last-child {
   padding: 0;
 }
 
-.header-panel-action button:hover {
+.hover-agrandar:hover {
   transform: scale(1.25);
 }
 
@@ -820,25 +825,25 @@ td:last-child {
 
 /*Reestablecer contraseña*/
 
-.reestablecer h1 {
-  font-weight: 700;
-  color: #333;
+.texto-reestablecer {
+  margin-bottom: 4rem;
 }
 
-.reestablecer h4 {
-  color: #333;
-  margin: 2rem 0;
+.login-usuario h6 {
+  font-weight: 700;
+  color: #9284be;
+  margin-top: 2rem;
 }
 
-.no-olvidar {
-  color: #ed3d8f;
-  font-weight: 700;
-  font-size: 1.3rem;
+/*Mis datos*/
+.org-adicional {
+  text-align: center;
+  font-style: italic;
 }
 
 /*responsive*/
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 993px) {
   .imagen {
     background-image: none;
   }
@@ -869,6 +874,10 @@ td:last-child {
   }
   .texto-admin {
     margin-bottom: 2rem;
+  }
+  .login-img {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 
