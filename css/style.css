@@ -841,6 +841,61 @@ td:last-child {
   font-style: italic;
 }
 
+/*Vista provincia*/
+
+.tabs-sigisu .nav-tabs .nav-link.active {
+  color: #37bbed;
+  border-color: #37bbed #37bbed #fbfbfb;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.tabs-sigisu .nav-tabs {
+  border-bottom: 1px solid #37bbed;
+  color: #333;
+}
+
+.tabs-sigisu .nav-link {
+  color: #333;
+}
+
+.tabs-sigisu .nav-tabs:hover .nav-link:hover {
+  border-color: #ccc #ccc #37bbed;
+  color: #37bbed;
+}
+
+.dato label {
+  color: #666;
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+.dato h6 {
+  color: #333;
+}
+
+.dato a {
+  color: #37bbed;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dato a:hover {
+  color: #9284be;
+}
+
+.mostrar-check {
+  display: flex;
+  justify-content: space-between;
+}
+
+.registro h6 {
+  border-top: 1px solid #37bbed;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
 /*responsive*/
 
 @media screen and (max-width: 993px) {
@@ -915,6 +970,11 @@ td:last-child {
 
   .desplegable-desktop {
     display: none;
+  }
+
+  .mostrar-check {
+    display: block;
+    justify-content: space-between;
   }
 }
 
