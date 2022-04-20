@@ -710,10 +710,6 @@ td:last-child {
 
 /*Notificaciones */
 
-.notificacion {
-  color: #333;
-  padding: 1rem;
-}
 .sub-menu .dropdown-menu {
   padding: 1rem;
   min-width: 20rem;
@@ -727,6 +723,13 @@ td:last-child {
 
 .item-notificacion {
   flex-wrap: nowrap;
+}
+.item-notificacion a {
+  color: #37bbed;
+}
+
+.item-notificacion p {
+  font-size: 12px;
 }
 
 .btn-terciario {
