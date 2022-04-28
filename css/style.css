@@ -252,6 +252,12 @@ header .menu:active {
   border: 2px solid #cccccc;
 }
 
+.textarea-sigisu {
+  margin: 0 0 1rem 0;
+  border-radius: 1rem;
+  border: 2px solid #cccccc;
+}
+
 .input-sigisu:active .tabla-sigisu {
   box-shadow: 0px 3px 6px rgb(0 0 0 / 15%);
   border-radius: 4px;
@@ -435,8 +441,7 @@ td:last-child {
 }
 
 .titulo-celeste {
-  margin: 2rem 0;
-  padding: 0;
+  padding: 2rem 0;
 }
 
 .agregar {
@@ -905,6 +910,89 @@ td:last-child {
   border-top: 1px solid #37bbed;
   margin-top: 0.5rem;
   padding-top: 0.5rem;
+}
+
+/*obra*/
+
+.usuario-fecha h6 {
+  color: #37bbed;
+}
+
+.usuario-fecha p {
+  margin-bottom: 0;
+}
+
+.datos-localizacion h6 {
+  color: #37bbed;
+  margin-bottom: 0.25rem;
+}
+
+.datos-localizacion p {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.datos-localizacion .col-2 {
+  text-align: end;
+}
+
+.modal-footer button {
+  padding: 0.25rem 1rem;
+}
+
+.visitas h5 {
+  border-bottom: solid 1px #ccc;
+}
+
+/*notificaciones*/
+.icono-notificaciones {
+  border-right: solid 1px #ccc;
+}
+
+.header-notificaciones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo-header-notificaciones {
+  display: flex;
+}
+
+.pill {
+  background-color: #9284be;
+  border-radius: 2rem;
+  padding: 0 1rem;
+  margin-left: 1rem;
+  color: white;
+  font-weight: 700;
+}
+
+/*financiamiento*/
+.monto h6 {
+  color: #37bbed;
+  font-weight: 700;
+}
+
+/*Menu secundario y cuerpo*/
+
+.menu-secundario {
+  padding: 1rem 0 4rem 0;
+}
+
+.menu-secundario .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #37bbed;
+}
+
+.menu-secundario .panel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu-secundario .nav-pills:hover {
+  background-color: #d4f3ff;
 }
 
 /*responsive*/
