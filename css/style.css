@@ -985,14 +985,22 @@ td:last-child {
   background-color: #37bbed;
 }
 
-.menu-secundario .panel {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
 .menu-secundario .nav-pills:hover {
   background-color: #d4f3ff;
+}
+
+/*documentos*/
+
+.tabs-sigisu .tabla-sigisu {
+  margin-top: 0;
+}
+
+.item-carpeta-doc {
+  display: flex;
+}
+
+.item-carpeta-doc span {
+  color: #37bbed;
 }
 
 /*responsive*/
