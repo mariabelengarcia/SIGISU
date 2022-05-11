@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGISU | Sistema de Gestión para la Integración Socio Urbana</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link href="dist/css/icono-arg.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/jscript.js"></script>
+  </head>
+  <body class="gestor">
+    <header>
+      <nav class="navbar fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="logo"
+              src="../img/logo/logo-secretaria.svg "
+              class="d-inline-block align-top"
+            />
+          </a>
+          <a class="navbar-brand" href="index.html">
+            <h1>Obras</h1>
+          </a>
+
+          <!-- boton menu-->
+
+          <div class="menu-sgo">
+            <button
+              class="btn menu"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              <span class="material-icons-outlined"> menu </span>
+            </button>
+
+            <!-- menu-->
+
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div class="offcanvas-header">
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        <div class="administracion-menu">
+                          <div>
+                            <img src="../img/icon/administracion-sm.svg" />
+                            Administración
+                          </div>
+                          <span class="material-icons-outlined">
+                            expand_more
+                          </span>
+                        </div>
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <ul class="administracion-items">
+                          <li>
+                            <a class="dropdown-item" href="#">Usuarios</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Mensajeria</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Provincias</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Organizaciones</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Departamentos</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Gobiernos locales</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Localidades</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Barrios</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#">
+                  <img src="../img/icon/proyectos-sm.svg" /> Proyectos</a
+                >
+                <a href="#"> <img src="../img/icon/obras-sm.svg" />Obras</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- sub menu -->
+      <section class="sub-menu">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDarkDropdown"
+              aria-controls="navbarNavDarkDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    id="navbarDarkDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span id="notification_count">3</span>
+                    <img
+                      src="../img/icon/notificaciones.svg"
+                      alt="notificaciones"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="navbarDarkDropdownMenuLink"
+                  >
+                    <li>
+                      <div class="item-notificacion row">
+                        <a class="dropdown-item notificacion" href="#">
+                          Notificación importante para leer, por favor
+                          <button
+                            type="button"
+                            class="btn-close"
+                            aria-label="Close"
+                          ></button>
+                        </a>
+                      </div>
+                    </li>
+                    <hr />
+                    <li>
+                      <div class="item-notificacion row">
+                        <a class="dropdown-item notificacion" href="#">
+                          Notificación importante para leer, por favor
+                          <button
+                            type="button"
+                            class="btn-close"
+                            aria-label="Close"
+                          ></button>
+                        </a>
+                      </div>
+                    </li>
+                    <hr />
+                    <li>
+                      <div class="item-notificacion row">
+                        <a class="dropdown-item notificacion" href="#">
+                          Notificación importante para leer, por favor
+                          <button
+                            type="button"
+                            class="btn-close"
+                            aria-label="Close"
+                          ></button>
+                        </a>
+                      </div>
+                    </li>
+                    <hr />
+                    <button type="button" class="btn btn-terciario">
+                      <img src="../img/icon/ver-celeste.svg" />
+                      Ver todas las notificaciones
+                    </button>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="Mi perfil"
+                    aria-current="page"
+                    href="#"
+                  >
+                    <img src="../img/icon/usuario.svg" alt="mi perfil" />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="Cerrar sesión"
+                    aria-current="page"
+                    href="#"
+                  >
+                    <img src="../img/icon/logout.svg" alt="cerrar sesión" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <main role="main" class="main-color">
+      <div class="container">
+        <h4 class="num titulo-celeste">Proyecto Martín Fierro</h4>
+        <div class="tabs-sigisu">
+          <!-- Tabs navs -->
+          <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex1-tab-1"
+                data-mdb-toggle="tab"
+                href="./obra-datosgenerales.html"
+                role="tab"
+                aria-controls="ex1-tabs-1"
+                aria-selected="true"
+                >Datos generales</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex1-tab-2"
+                data-mdb-toggle="tab"
+                href="./obra-financiamiento.html"
+                role="tab"
+                aria-controls="ex1-tabs-2"
+                aria-selected="false"
+                >Financiamiento</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="ex1-tab-2"
+                data-mdb-toggle="tab"
+                href="./obra-convenio.html"
+                role="tab"
+                aria-controls="ex1-tabs-2"
+                aria-selected="false"
+                >Convenio</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex1-tab-2"
+                data-mdb-toggle="tab"
+                href="./obra-variantes-ampliaciones.html"
+                role="tab"
+                aria-controls="ex1-tabs-2"
+                aria-selected="false"
+                >Variantes y ampliaciones</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex1-tab-2"
+                data-mdb-toggle="tab"
+                href="./obra-documentos.html"
+                role="tab"
+                aria-controls="ex1-tabs-2"
+                aria-selected="false"
+                >Documentos</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex1-tab-2"
+                data-mdb-toggle="tab"
+                href="./obra-historial.html"
+                role="tab"
+                aria-controls="ex1-tabs-2"
+                aria-selected="false"
+                >Historial</a
+              >
+            </li>
+          </ul>
+          <!-- Tabs navs -->
+
+          <!-- Tabs content -->
+          <div class="tab-content menu-secundario" id="ex1-content">
+            <div
+              class="tab-pane fade show active"
+              id="ex1-tabs-1"
+              role="tabpanel"
+              aria-labelledby="ex1-tab-1"
+            ></div>
+            <div class="row">
+              <div class="col-2">
+                <nav class="nav flex-column nav-pills">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Datos del convenio
+                  </a>
+                  <a
+                    class="nav-link"
+                    href="../pages/obra-convenio-certificados.html"
+                    >Certificados
+                  </a>
+                  <a
+                    class="nav-link"
+                    href="../pages/obra-convenio-desembolsos.html"
+                    >Desembolsos
+                  </a>
+                  <a
+                    class="nav-link"
+                    href="../pages/obra-convenio-redeterminaciones.html"
+                    >Redeterminaciones
+                  </a>
+                  <a
+                    class="nav-link"
+                    href="../pages/obra-convenio-comprobantes.html"
+                    >Comprobantes
+                  </a>
+                  <a class="nav-link" href="../pages/obra-convenio-plan.html"
+                    >Plan de trabajo
+                  </a>
+                  <a
+                    class="nav-link"
+                    href="../pages/obra-convenio-adicionales.html"
+                    >Convenios adicionales
+                  </a>
+                </nav>
+              </div>
+              <div class="col-lg-10 col-md-12 col-sm-12">
+                <div class="panel row">
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <label for="formFile" class="form-label">Tipo</label>
+                    <select
+                      class="form-select input-sigisu"
+                      aria-label="Default select example"
+                    >
+                      <option value="1">Seleccionar</option>
+                      <option value="2">20</option>
+                      <option value="3">30</option>
+                      <option value="4">40</option>
+                    </select>
+                    <label for="formFile" class="form-label"
+                      >Plazo inicial (en días)</label
+                    >
+                    <input
+                      class="form-control input-sigisu"
+                      type="text"
+                      placeholder="ingresar cantidad de días"
+                      aria-label="default input example"
+                      required="true"
+                    />
+                    <label for="formFile" class="form-label"
+                      >Presupuesto oficial</label
+                    >
+                    <input
+                      class="form-control input-sigisu"
+                      type="text"
+                      placeholder="Ingresá monto"
+                      aria-label="default input example"
+                      required="true"
+                    />
+                    <label for="formFile" class="form-label"
+                      >Contraparte comitente</label
+                    >
+                    <input
+                      class="form-control input-sigisu"
+                      type="text"
+                      placeholder="Ingresá contraparte"
+                      aria-label="default input example"
+                      required="true"
+                    />
+                    <label for="formFile" class="form-label"
+                      >Porcentaje de anticipo financiero</label
+                    >
+                    <input
+                      class="form-control input-sigisu"
+                      type="text"
+                      placeholder="Ingresá el porcentaje"
+                      aria-label="default input example"
+                      required="true"
+                    />
+                    <div class="agregar-doc">
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn agregar"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        <img src="../img/icon/plus-celeste.svg" /> Documento
+                        adjunto
+                      </button>
+                      <hr />
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">
+                                Agregar documento
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="mb-3">
+                                <label for="formFileMultiple" class="form-label"
+                                  >Seleccioná el archico que quieras
+                                  agregar</label
+                                >
+                                <input
+                                  class="form-control input-sigisu"
+                                  type="file"
+                                  id="formFileMultiple"
+                                  multiple
+                                />
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn primary-small">
+                                Agregar documento
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <label for="formFile" class="form-label"
+                      >Modo de gestión</label
+                    >
+                    <select
+                      class="form-select input-sigisu"
+                      aria-label="Default select example"
+                    >
+                      <option value="1">Seleccionar</option>
+                      <option value="2">20</option>
+                      <option value="3">30</option>
+                      <option value="4">40</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12 linea-fechas">
+                    <label for="formFile" class="form-label">Comitente</label>
+                    <input
+                      class="form-control input-sigisu"
+                      type="text"
+                      placeholder="Ingresá el comitente"
+                      aria-label="default input example"
+                      required="true"
+                    />
+                    <label for="formFile" class="form-label"
+                      >Monto nación</label
+                    >
+                    <input
+                      class="form-control input-sigisu"
+                      type="text"
+                      placeholder="Ingresá el monto"
+                      aria-label="default input example"
+                      required="true"
+                    />
+                    <label for="formFile" class="form-label"
+                      >Tipo de anticipo financiero</label
+                    >
+                    <select
+                      class="form-select input-sigisu"
+                      aria-label="Default select example"
+                    >
+                      <option value="1">Seleccionar</option>
+                      <option value="2">20</option>
+                      <option value="3">30</option>
+                      <option value="4">40</option>
+                    </select>
+                    <label for="formFile" class="form-label"
+                      >N° de convenio</label
+                    >
+                    <input
+                      class="form-control input-sigisu"
+                      type="text"
+                      placeholder="Ingresá el porcentaje"
+                      aria-label="default input example"
+                      required="true"
+                    />
+                    <label for="formFile" class="form-label"
+                      >Modo de certificación</label
+                    >
+                    <select
+                      class="form-select input-sigisu"
+                      aria-label="Default select example"
+                    >
+                      <option value="1">Seleccionar</option>
+                      <option value="2">20</option>
+                      <option value="3">30</option>
+                      <option value="4">40</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <label for="formFile" class="form-label"
+                      >Fecha de licitación</label
+                    >
+                    <input
+                      class="form-control input-sigisu"
+                      type="text"
+                      placeholder="Ingresá la fecha"
+                      aria-label="default input example"
+                      required="true"
+                    />
+                    <label for="formFile" class="form-label"
+                      >Fecha de acta de inicio</label
+                    >
+                    <input
+                      class="form-control input-sigisu"
+                      type="text"
+                      placeholder="Ingresá la fecha"
+                      aria-label="default input example"
+                      required="true"
+                    />
+                    <div class="row">
+                      <div class="col-lg-6 col-md-12 col-sm-12">
+                        <label for="formFile" class="form-label"
+                          >Plazo vigente</label
+                        >
+                        <p>150 días</p>
+                      </div>
+                      <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="agregar-doc">
+                          <!-- Button trigger modal -->
+                          <button
+                            type="button"
+                            class="btn agregar"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                          >
+                            <img src="../img/icon/plus-celeste.svg" /> Fin de
+                            obra
+                          </button>
+                          <hr />
+                          <!-- Modal -->
+                          <div
+                            class="modal fade"
+                            id="exampleModal"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5
+                                    class="modal-title"
+                                    id="exampleModalLabel"
+                                  >
+                                    Agregar documento
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="mb-3">
+                                    <label
+                                      for="formFileMultiple"
+                                      class="form-label"
+                                      >Seleccioná el archico que quieras
+                                      agregar</label
+                                    >
+                                    <input
+                                      class="form-control input-sigisu"
+                                      type="file"
+                                      id="formFileMultiple"
+                                      multiple
+                                    />
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn primary-small"
+                                  >
+                                    Agregar documento
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <label for="formFile" class="form-label"
+                      >Fecha de firma de contrato</label
+                    >
+                    <input
+                      class="form-control input-sigisu"
+                      type="text"
+                      placeholder="Ingresá la fecha"
+                      aria-label="default input example"
+                      required="true"
+                    />
+                    <div class="agregar-doc">
+                      <!-- Button trigger modal -->
+                      <button
+                        type="button"
+                        class="btn agregar"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        <img src="../img/icon/plus-celeste.svg" /> Acta de
+                        inicio
+                      </button>
+                      <hr />
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">
+                                Agregar documento
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="mb-3">
+                                <label for="formFileMultiple" class="form-label"
+                                  >Seleccioná el archico que quieras
+                                  agregar</label
+                                >
+                                <input
+                                  class="form-control input-sigisu"
+                                  type="file"
+                                  id="formFileMultiple"
+                                  multiple
+                                />
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn primary-small">
+                                Agregar documento
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                  <div class="agregar-doc">
+                    <!-- Button trigger modal -->
+                    <button
+                      type="button"
+                      class="btn agregar"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <img src="../img/icon/plus-celeste.svg" /> Doc. de
+                      recepción provisoria
+                    </button>
+                    <hr />
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              Agregar documento
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                              <label for="formFileMultiple" class="form-label"
+                                >Seleccioná el archico que quieras
+                                agregar</label
+                              >
+                              <input
+                                class="form-control input-sigisu"
+                                type="file"
+                                id="formFileMultiple"
+                                multiple
+                              />
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn primary-small">
+                              Agregar documento
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <label for="formFile" class="form-label"
+                      >Fecha de inicio de actividades</label
+                    >
+                    <input
+                      class="form-control input-sigisu"
+                      type="text"
+                      placeholder="Ingresá la fecha"
+                      aria-label="default input example"
+                      required="true"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <!-- footer con links-->
+
+      <div class="container">
+        <div class="row footer-chico">
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="region region-footer1">
+              <section
+                id="block-menu-menu-footer-1"
+                class="block block-menu clearfix"
+              >
+                <div class="col-lg-6 col-md-12 col-sm-12 version">
+                  <p>Versión 1.0</p>
+                  <span class="material-icons-outlined">calendar_today</span>
+                  <p>2022</p>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="region region-footer3">
+              <section
+                id="block-menu-menu-footer-3"
+                class="block block-menu clearfix"
+              >
+                <div class="lets-make-it">
+                  <p>Realizado por</p>
+                  <img src="../img/letsmakeit.svg" />
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer celeste-->
+
+      <div class="sub-footer col-sm-12 m-y-1 p-x-0">
+        <div class="container">
+          <div class="row sub-footer">
+            <img src="../img/logo/logo_argentina_unida-blanco.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
