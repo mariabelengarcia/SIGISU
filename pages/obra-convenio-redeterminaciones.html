@@ -297,7 +297,7 @@
             </li>
             <li class="nav-item" role="presentation">
               <a
-                class="nav-link active"
+                class="nav-link"
                 id="ex1-tab-2"
                 data-mdb-toggle="tab"
                 href="./obra-financiamiento.html"
@@ -309,7 +309,7 @@
             </li>
             <li class="nav-item" role="presentation">
               <a
-                class="nav-link"
+                class="nav-link active"
                 id="ex1-tab-2"
                 data-mdb-toggle="tab"
                 href="./obra-convenio.html"
@@ -336,7 +336,7 @@
                 class="nav-link"
                 id="ex1-tab-2"
                 data-mdb-toggle="tab"
-                href="./obra-documentos-listado-archivos.html"
+                href="./obra-documentos.html"
                 role="tab"
                 aria-controls="ex1-tabs-2"
                 aria-selected="false"
@@ -359,188 +359,137 @@
           <!-- Tabs navs -->
 
           <!-- Tabs content -->
-          <div class="tab-content" id="ex1-content">
+          <div class="tab-content menu-secundario" id="ex1-content">
             <div
               class="tab-pane fade show active"
               id="ex1-tabs-1"
               role="tabpanel"
               aria-labelledby="ex1-tab-1"
-            >
-              <div class="paneles row">
-                <div class="col-lg-7 col-md-12 col-sm-12">
-                  <div class="panel row">
-                    <h5>Fuentes de financiamiento</h5>
-                    <hr />
-                    <label for="formFile" class="form-label">Monto total</label>
-                    <input
-                      class="form-control input-sigisu"
-                      type="text"
-                      placeholder="Ingresá el nombre"
-                      aria-label="default input example"
-                      required="true"
-                    />
-                    <table class="table table-borderless tabla-sistema">
-                      <thead>
-                        <tr>
-                          <th scope="col">Monto</th>
-                          <th scope="col">Fuente</th>
-                          <th scope="col">Organismo financiador</th>
-                          <th scope="col">Prestamo</th>
-                          <th scope="col">%</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>$100.000,00</td>
-                          <td>
-                            <select
-                              class="form-select input-sigisu"
-                              aria-label="Default select example"
-                            >
-                              <option value="1">Seleccionar</option>
-                              <option value="2">20</option>
-                              <option value="3">30</option>
-                              <option value="4">40</option>
-                            </select>
-                          </td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>
-                            <input
-                              class="form-control input-sigisu"
-                              type="text"
-                              placeholder="%"
-                              aria-label="default input example"
-                            />
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <div class="agregar-doc">
-                      <!-- Button trigger modal -->
-                      <button
-                        type="button"
-                        class="btn agregar"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                      >
-                        <img src="../img/icon/plus-celeste.svg" /> Agregar
-                        fuente de financiamiento
-                      </button>
+            ></div>
+            <div class="row">
+              <div class="col-2">
+                <nav class="nav flex-column nav-pills">
+                  <a class="nav-link" href="../pages/obra-convenio.html"
+                    >Datos del convenio
+                  </a>
+                  <a class="nav-link" href="../pages/obra-convenio-certificados.html"
+                    >Certificados
+                  </a>
+                  <a
+                    class="nav-link"
+                    href="../pages/obra-convenio-desembolsos.html"
+                    >Desembolsos
+                  </a>
+                  <a
+                    class="nav-link active" aria-current="page"
+                    href="#"
+                    >Redeterminaciones
+                  </a>
+                  <a
+                    class="nav-link"
+                    href="../pages/obra-convenio-comprobantes.html"
+                    >Comprobantes
+                  </a>
+                  <a class="nav-link" href="../pages/obra-convenio-plan.html"
+                    >Plan de trabajo
+                  </a>
+                  <a
+                    class="nav-link"
+                    href="../pages/obra-convenio-adicionales.html"
+                    >Convenios adicionales
+                  </a>
+                </nav>
+              </div>
+              <div class="col-10">
+                <div class="panel row">
+                      <div class="header-panel-action">
+                        <h5>Redeterminaciones</h5>
+                        <button
+                          type="button"
+                          class="btn agregar hover-agrandar"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal3"
+                        >
+                          <img src="../img/icon/plus-celeste.svg" />
+                        </button>
 
-                      <!-- Modal -->
-                      <div
-                        class="modal fade"
-                        id="exampleModal"
-                        tabindex="-1"
-                        aria-labelledby="exampleModalLabel"
-                        aria-hidden="true"
-                      >
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">
-                                Agregar fuente de financiamiento
-                              </h5>
-                              <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                              ></button>
-                            </div>
-                            <div class="modal-body">
-                              <div class="mb-3">
-                                <select
-                                  class="form-select input-sigisu"
-                                  aria-label="Default select example"
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="exampleModal3"
+                          tabindex="-1"
+                          aria-labelledby="exampleModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                  Cargar nueva redeterminación
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body">
+                                 <select class="form-select  input-sigisu " aria-label="Default select example">
+                                        <option value="2">Definitiva</option>
+                                        <option value="3">Provisoria</option>
+                                  </select>
+                                  <label for="formFile" class="form-label"
+                                  >N° de redeterminación</label
                                 >
-                                  <option value="1">Seleccionar</option>
-                                  <option value="2">20</option>
-                                  <option value="3">30</option>
-                                  <option value="4">40</option>
-                                </select>
+                                <input
+                                  class="form-control input-sigisu"
+                                  type="text"
+                                  placeholder="Ingresá el nombre"
+                                  aria-label="default input example"
+                                  required="true"
+                                />
+                             
+                                <label for="formFile" class="form-label">N° de expediente GDE</label>
+                                <input
+                                  class="form-control input-sigisu"
+                                  type="text"
+                                  placeholder="Ingresá el nombre"
+                                  aria-label="default input example"
+                                  required="true"
+                                />
+                                <label for="formFile" class="form-label">Fecha de caratulación</label>
+                                <input
+                                  class="form-control input-sigisu"
+                                  type="text"
+                                  placeholder="Ingresá el nombre"
+                                  aria-label="default input example"
+                                  required="true"
+                                />
+                                 
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn primary-small">
+                                  Agregar
+                                </button>
                               </div>
                             </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn primary-small">
-                                Agregar
-                              </button>
-                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
+                      <hr />
 
-                    <div class="col-lg-5 col-md-12 col-sm-12">
-                      <div class="panel row">
-                        <h5>Montos de obra - Nación</h5>
-                        <hr />
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                          <div class="monto">
-                            <h6>Presupuesto oficial</h6>
-                            <p>$100.000,00</p>
-                          </div>
-                           <div class="monto">
-                            <h6>Monto Nación</h6>
-                            <p>$100.000,00</p>
-                          </div>
-                           <div class="monto">
-                            <h6>Monto proyectado</h6>
-                            <p>$100.000,00</p>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                          <div class="monto">
-                            <h6>Monto adjudicado</h6>
-                            <p>$100.000,00</p>
-                          </div>
-                           <div class="monto">
-                            <h6>Monto actualizado</h6>
-                            <p>$100.000,00</p>
-                          </div>
-                        </div>
-                        <hr/>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                          <div class="monto">
-                            <h6>Monto certificado</h6>
-                            <p>$100.000,00</p>
-                          </div>
-                           <div class="monto">
-                            <h6>Saldo a pagar</h6>
-                            <p>$100.000,00</p>
-                          </div>
-                           <div class="monto">
-                            <h6>Saldo de obra a pagar</h6>
-                            <p>$100.000,00</p>
-                          </div>
-                          <div class="monto">
-                            <h6>% de avance financiero pagado</h6>
-                            <p>$100.000,00</p>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                          <div class="monto">
-                            <h6>Monto pagado</h6>
-                            <p>$100.000,00</p>
-                          </div>
-                           <div class="monto">
-                            <h6>Saldo de obra a ejecutar</h6>
-                            <p>$100.000,00</p>
-                          </div>
-                           <div class="monto">
-                            <h6>% de avance físico</h6>
-                            <p>25,98%</p>
-                          </div>
-                        </div>
-                      </div>
+                      <p class="org-adicional">
+                        Aún no se han cargado Redeterminaciones
+                      </p>
                     </div>
+                   </div>
                   </div>
-                  
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 

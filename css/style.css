@@ -944,6 +944,10 @@ td:last-child {
   border-bottom: solid 1px #ccc;
 }
 
+.linea-fechas {
+  border-right: solid 1px #ccc;
+}
+
 /*notificaciones*/
 .icono-notificaciones {
   border-right: solid 1px #ccc;
@@ -985,7 +989,7 @@ td:last-child {
   background-color: #37bbed;
 }
 
-.menu-secundario .nav-pills:hover {
+.menu-secundario .nav-link:hover {
   background-color: #d4f3ff;
 }
 
@@ -1001,6 +1005,32 @@ td:last-child {
 
 .item-carpeta-doc span {
   color: #37bbed;
+}
+
+/*Historial*/
+
+.historial {
+  display: flex;
+}
+
+.cuerpo-historial {
+  display: flex;
+}
+
+.comentarios {
+  text-align: right;
+}
+
+/*variantes*/
+
+.pill-successful {
+  background-color: #2e7d33;
+  color: #fff;
+  font-weight: 600;
+  padding: 0 0.5rem;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  display: inline-block;
 }
 
 /*responsive*/
